@@ -1,0 +1,64 @@
+﻿
+#container {
+background-color: yellow;
+    font-size: 22pt;
+    width: 330px;
+    margin-left: 35%;
+    font-size: 0; 
+}
+
+button {
+    background-color: #3498db;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    background-size: 100px 100px;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+button:active,button:focus { 
+    outline:  2px solid blue; 
+}
+
+h1 {
+    font-size: 30px; 
+}
+
+h1:hover:before {
+    content: 'Some '; 
+    font-size: 20px;
+    font-style: italic;
+}
+
+h1:hover:after {
+    content: ' by NododyRocs'; 
+    font-size: 20px;
+    font-style: italic;
+}
+
+#highlight {
+    transition: 1s;
+}
+
+#highlight:hover {
+    background-color: white;
+    color: white;
+}
+
+#fade {
+    transition: 1s;
+}
+
+#fade:hover {
+   background: 0;
+   color:transparent;
+}
+
+
+
+
+
+
