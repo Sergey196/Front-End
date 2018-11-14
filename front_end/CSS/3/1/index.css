@@ -1,0 +1,36 @@
+#one {
+    position: relative;
+    background-color: #ffe9c9;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px 5px 5px 5px;
+    top: 100px;
+    left: 100px;
+    border: 5px solid #ff747c;
+}
+
+#two {
+    width: 300px;
+    height: 40px;
+    background-color: #91ff47;
+}
+
+#text_div {
+    height:  40px;
+    font-size: 20pt;
+    display:  table-cell;
+    vertical-align:  middle;
+}
+
+#two:after {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    border: 12px solid transparent;
+    border-top: 12px solid #91ff47;
+    content: '';
+}
+
+#tree {
+    margin: 12px;
+}
