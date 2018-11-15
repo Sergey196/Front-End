@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .test {
-            width: 200px;
-            height: 200px;
-            background: #888888;
-            background:
-                    radial-gradient(circle 20px at -20% 50%,transparent,transparent 100px,#888888 100px),
-                    radial-gradient(circle 20px at 120% 50%,transparent,transparent 100px,#888888 100px);
-            background-size:100px 200px, 100px 200px;
-            background-position:0 0,100% 0;
-            background-repeat:no-repeat;
+        .starbar .outer {
+            background: url('ghff') no-repeat;
+            width: 219px;
+            height: 30px;
+            position: absolute;
         }
-    </style>
-</head>
-<body>
-    <div class="test">
-    </div>
-</body>
+        .starbar_w {
+            display: block;
+            width: 167px;
+            background: url('.,m') 0 -62px no-repeat;
+            height: 30px;
+            position: absolute;
+        }
+        </style>
+    </head>
+    <body>
+        <div class='starbar'>
+            <div class='outer'>
+                <div class='starbar_w'></div>
+            </div>
+        </div>
+    </body>
 </html>
