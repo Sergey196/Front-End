@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .test {
+            width: 200px;
+            height: 200px;
+            background: #888888;
+            background:
+                    radial-gradient(circle 20px at -20% 50%,transparent,transparent 100px,#888888 100px),
+                    radial-gradient(circle 20px at 120% 50%,transparent,transparent 100px,#888888 100px);
+            background-size:100px 200px, 100px 200px;
+            background-position:0 0,100% 0;
+            background-repeat:no-repeat;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div class="test">
+    </div>
 </body>
 </html>

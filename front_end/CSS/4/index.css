@@ -1,36 +1,223 @@
-#one {
-    position: relative;
-    background-color: #ffe9c9;
-    width: 300px;
-    height: 150px;
-    border-radius: 5px 5px 5px 5px;
-    top: 100px;
-    left: 100px;
-    border: 5px solid #ff747c;
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
-#two {
-    width: 300px;
-    height: 40px;
-    background-color: #91ff47;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-#text_div {
-    height:  40px;
-    font-size: 20pt;
-    display:  table-cell;
-    vertical-align:  middle;
+#top_panel {
+    background-color: #2f3649;
+    height: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: stretch;
 }
 
-#two:after {
-    position: absolute;
-    left: 20px;
-    top: 40px;
-    border: 12px solid transparent;
-    border-top: 12px solid #91ff47;
-    content: '';
+#top_panel_help_center {
+    width: 100px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-#tree {
-    margin: 12px;
+#top_panel_support {
+    width: 100px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
+
+#top_panel_user {
+    width: 150px;
+    background-color: #16a4fa;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.user {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ff6f80;
+}
+
+.status {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+#page {
+    display: flex;
+    height: 100%;
+}
+#low_panel {
+    background-color: #645fff;
+    height: 50px;
+}
+
+#sidebar {
+    flex-basis: 15%;
+    background-color: #1f2638;
+}
+
+#sidebar_button {
+    background-color: #1f2638;
+    height: 15%;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#add_book {
+    font-size: 20px;
+    font-weight: 600;
+    width: 180px;
+    height: 60px;
+    border-width: 2px;
+    border-color: #1f2638;
+    border-style: solid none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: #f27b5c;
+}
+
+#sidebar_settings {
+    background-color: #1f2638;
+    height: 29%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.sidebar_settings_item {
+    flex: auto;
+    color: #76727e;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar_settings_item:hover {
+    background-color: #16a4fa;
+    color: white;
+}
+
+#sidebar_popularity {
+    background-color: #1f2638;
+    height: 24%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.sidebar_popularity_item {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    color: #76727e;
+    font-size: 16px;
+}
+
+.sidebar_popularity_item:hover {
+    background-color: #fa9271;
+    color: #ffb7d6;
+}
+
+[id ^= sidebar_settings_item]:before {
+    content: '  ';
+}
+
+[id ^= sidebar_settings_item]:after {
+    content: '  ';
+}
+
+[id ^= sidebar_popularity_item]:before {
+    content: '  ';
+}
+
+[id ^= sidebar_popularity_item]:after {
+    content: '  ';
+}
+
+#sidebar_popularity_item_1 {
+   color: red;
+}
+
+#sidebar_popularity_item_2 {
+    color: yellow;
+}
+
+#sidebar_popularity_item_3 {
+    color: #eeeeee;
+}
+
+#sidebar_popularity_item_4 {
+    color: #48a4ff;
+}
+
+#sidebar_warnings {
+    background-color: #1f2638;
+    height: 29%;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.warning_add_book {
+    background-color: #bb86fa;
+    flex-basis: 300px;
+
+    min-width:200px;
+    max-width:350px;
+}
+
+.sidebar_line {
+    height: 1%;
+    background: linear-gradient(to top, #363836, #0f0830);
+}
+
+#info {
+    flex-basis: 85%;
+}
+
+#info_name {
+    background-color: #ff7351;
+    height: 5%;
+}
+
+#info_settings {
+    background-color: #3cbeff;
+    height: 5%;
+}
+
+#info_view {
+    background-color: #ff2ebf;
+    height: 90%;
+}
+

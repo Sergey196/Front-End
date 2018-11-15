@@ -5,28 +5,23 @@
     height: 150px;
     top: 100px;
     left: 100px;
-    border: 5px solid #9cf8ff;
-    color: white;
+    color: #193bff;
     padding: 10px;
     z-index: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 0px 5px 5px 5px;
 }
 
 #one:before {
-    position: relative;
-    left: 125px;
-    top: -60px;
-    border: 30px solid transparent;
-    border-bottom: 30px solid #9cf8ff;
-    content: '';
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #48a4ff;
+    content: 'Caption';
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    left: 0px;
+    top: -30px;
 }
 
-#one:after {
-    position: relative;
-    left: 73px;
-    top: -143px;
-    border: 30px solid transparent;
-    border-bottom: 30px solid #48a4ff;
-    content: '';
-}
 
 

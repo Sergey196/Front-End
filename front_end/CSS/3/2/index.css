@@ -1,36 +1,32 @@
 #one {
     position: relative;
-    background-color: #ffe9c9;
+    background-color: #48a4ff;
     width: 300px;
     height: 150px;
-    border-radius: 5px 5px 5px 5px;
     top: 100px;
     left: 100px;
-    border: 5px solid #ff747c;
+    border: 5px solid #9cf8ff;
+    color: white;
+    padding: 10px;
+    z-index: 0;
 }
 
-#two {
-    width: 300px;
-    height: 40px;
-    background-color: #91ff47;
-}
-
-#text_div {
-    height:  40px;
-    font-size: 20pt;
-    display:  table-cell;
-    vertical-align:  middle;
-}
-
-#two:after {
-    position: absolute;
-    left: 20px;
-    top: 40px;
-    border: 12px solid transparent;
-    border-top: 12px solid #91ff47;
+#one:before {
+    position: relative;
+    left: 125px;
+    top: -60px;
+    border: 30px solid transparent;
+    border-bottom: 30px solid #9cf8ff;
     content: '';
 }
 
-#tree {
-    margin: 12px;
+#one:after {
+    position: relative;
+    left: 73px;
+    top: -143px;
+    border: 30px solid transparent;
+    border-bottom: 30px solid #48a4ff;
+    content: '';
 }
+
+
