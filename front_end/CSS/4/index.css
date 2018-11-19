@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    height: 100%;
 }
 
 body {
@@ -97,7 +96,7 @@ body {
 
 #sidebar_button {
     background-color: #1f2638;
-    height: 15%;
+    height: 140px;
 
     display: flex;
     justify-content:center;
@@ -119,7 +118,7 @@ body {
 
 #sidebar_settings {
     background-color: #1f2638;
-    height: 29%;
+    height: 250px;
     display: flex;
     flex-direction: column;
 
@@ -144,7 +143,7 @@ body {
 
 #sidebar_popularity {
     background-color: #1f2638;
-    height: 24%;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -201,7 +200,7 @@ body {
 
 #sidebar_warnings {
     background-color: #1f2638;
-    height: 22%;
+    height: 200px;
     overflow:hidden;
 
     display: flex;
@@ -214,7 +213,6 @@ body {
     color: #454d60;
     font-size: 18px;
 }
-
 .warning_img {
     float: left;
     margin-right: 15px;
@@ -233,7 +231,7 @@ body {
 }
 
 .sidebar_line {
-    height: 1%;
+    height: 10px;
     background: linear-gradient(to top, #363836, #0f0830);
 }
 
@@ -243,7 +241,7 @@ body {
 
 #info_name {
     background-color: #eef1f8;
-    height: 3%;
+    height: 40px;
     font-size: 20px;
     font-weight: 600;
     font-family: Arial, sans-serif;
@@ -257,7 +255,7 @@ body {
 
 #info_settings {
     background-color: #eef1f8;
-    height: 6%;
+    height: 55px;
     display: flex;
     align-items: center;
 }
@@ -307,7 +305,7 @@ body {
 
 #info_view {
     background-color: white;
-    height: 90%;
+    height: 800px;
 
     display: flex;
     flex-wrap: wrap;
@@ -316,13 +314,13 @@ body {
 
 .book_view {
     background-color: #16a4fa;
-    width: 526px;
+    width: 32.8%;
     height: 750px;
     border: 4px double black;
 }
 
 .info_line {
-    height: 0.5%;
+    height: 5px;
     background: linear-gradient(to bottom, #87dcef, #f5f8ff);
 }
 
