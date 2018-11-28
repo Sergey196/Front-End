@@ -1,0 +1,47 @@
+.top_panel_help {
+    width: 100px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.top_panel_help_center {
+    width: 100px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.top_panel_support {
+    width: 100px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.top_panel_user {
+    width: 150px;
+    background-color: #16a4fa;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.user {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ff6f80;
+}
+
+.checked {
+    margin-left: 5px;
+    margin-right: 5px;
+}

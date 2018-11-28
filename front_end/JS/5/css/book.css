@@ -1,0 +1,9 @@
+.book {
+    background-color: #16a4fa;
+    width: 300px;
+    height: 450px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+}

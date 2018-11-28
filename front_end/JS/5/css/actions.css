@@ -1,0 +1,138 @@
+.actions_line {
+    height: 10px;
+    background: linear-gradient(to top, #363836, #0f0830);
+}
+
+.add_book {
+    height: 150px;
+    background-color: #1f2638;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.actions_settings {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.actions_popularity {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.actions_warnings {
+    height: 470px;
+    overflow:hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.add_book_button {
+    font-size: 20px;
+    font-weight: 600;
+    width: 180px;
+    height: 60px;
+    border-width: 2px;
+    border-color: #1f2638;
+    border-style: solid none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: #f27b5c;
+}
+
+.actions_settings_item {
+    flex: auto;
+    color: #76727e;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.actions_popularity_item {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    color: #76727e;
+    font-size: 16px;
+}
+
+.actions_settings_item:hover {
+    background-color: #16a4fa;
+    color: white;
+}
+
+.actions_popularity_item:hover {
+    background-color: #16a4fa;
+    color: white;
+}
+
+.actions_popularity_item:hover [class *= icon_popularity] {
+    color: #0ab4dc;
+}
+
+.icons {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+[class *= icon_popularity] {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 8px;
+}
+
+.icon_popularity_1 {
+    color: red;
+}
+
+.icon_popularity_2 {
+    color: yellow;
+}
+
+.icon_popularity_3 {
+    color: #0ab4dc;
+}
+
+.icon_popularity_4 {
+    color: blue;
+}
+
+.warning {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 130px;
+    color: #454d60;
+    font-size: 18px;
+}
+
+.icon_warning {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 100%;
+    margin-left: 25px;
+}
+
+.warning_text {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #676769;
+}
