@@ -1,9 +1,82 @@
 .book {
-    background-color: #16a4fa;
     width: 300px;
-    height: 450px;
+    height: 550px;
     margin: 15px;
-
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+}
+
+.book_img {
+    height: 450px;
+    width: 100%;
+}
+
+.book_name {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-indent: 20px;
+    color: #c2c3c4;
+}
+
+.book_author {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+    height: 25px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-indent: 20px;
+    color: #c5d2d7;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+.book_rating {
+    height: 25px;
+    width: 100%;
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.stars {
+    margin-left: 20px;
+    color: #eeaa00;
+}
+
+.book_img_view {
+    border-radius: 15px 15px 15px 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.stars > .star:hover:before,
+.stars > .star:hover ~ .star:before {
+    content: "\2605";
+    position: absolute;
+    color: #cc6600;
+}
+
+.stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.stars_test {
+    color: #cc6600;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background: #0f0830;
 }

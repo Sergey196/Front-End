@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/top_panel.css" rel="stylesheet">
-    <link href="css/actions.css" rel="stylesheet">
-    <link href="css/low_panel.css" rel="stylesheet">
-    <link href="css/books.css" rel="stylesheet">
-    <link href="css/book.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/top_panel.css" rel="stylesheet">
+        <link href="css/actions.css" rel="stylesheet">
+        <link href="css/low_panel.css" rel="stylesheet">
+        <link href="css/books.css" rel="stylesheet">
+        <link href="css/book.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
     <body>
+        <div id="add_book" class="modal">
+            <div>Name:</div>
+            <p><input id = "name" maxlength = "25" size = "40" ></p>
+            <div>Author:</div>
+            <p><input id = "author" maxlength = "25" size = "40" ></p>
+            <div>Cover:</div>
+            <p><input id = "cover" type="file"></p><br>
+            <div class="add_book_action_buttons">
+                <a id = 'add' class = 'add_book_action' href="#">Add</a><a class = 'add_book_action' href="#" rel="modal:close">Close</a>
+            </div>
+        </div>
         <div class = "panel">
             <div class = "top_panel">
                 <div class = "top_panel_help">Help Center&emsp;&bull;</div>
@@ -25,7 +39,7 @@
             </div>
             <div class = "actions">
                 <div class = "add_book">
-                    <button class = "add_book_button">&plus;&emsp;ADD BOOK</button>
+                    <a href="#add_book" class = "add_book_button" rel="modal:open">&plus;&emsp;ADD BOOK</a>
                 </div>
                 <div class = "actions_line"></div>
                 <div class = "actions_settings">
@@ -114,8 +128,11 @@
                 </div>
                 <div class="books_line"></div>
                 <div class = "books_view">
-                    <!-- текст -->
+                    <!-- текст --
                     <div class="book">
+                        <div class="book_img">
+                            <img class="book_img_view" src="https://editus.ru/img/services/verstka/cover_1.jpg" alt="Письма мастера дзен">
+                        </div>
                         <div class="book_name">
                             Free Books
                         </div>
@@ -123,19 +140,16 @@
                             Free Books
                         </div>
                         <div class="book_rating">
-                            Free Books
+                            <div class="stars">
+                                <span class = 'star'>&#9734;</span>
+                                <span class = 'star'>&#9734;</span>
+                                <span class = 'star'>&#9734;</span>
+                                <span class = 'star'>&#9734;</span>
+                                <span class = 'star'>&#9734;</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <div class="book">Free Books</div>
-                    <!-- текст -->
+                    -- текст -->
                 </div>
             </div>
             <div class = "low_panel">
@@ -147,6 +161,13 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="index.js"></script>
+        <!---- <script type="text/javascript" src="index.js"></script>--->
+
+        <script src="js/EventEmitter.js"></script>
+        <script src="js/Model.js"></script>
+        <script src="js/Controller.js"></script>
+        <script src="js/View.js"></script>
+        <script src="js/core.js"></script>
+        <script src="js/actions/add_book.js"></script>
     </body>
 </html>

@@ -1,34 +1,4 @@
-let books = [];
-
-$('.books_view').on('click','.book', function(){
-    alert('jkkhkhj');
-});
-
-$('.books_view').on('click','.star', function(){
-    $(this).html('&#9733;');
-    $(this).addClass("stars_test");
-    $(this).nextAll().html('&#9733;');
-    $(this).nextAll().addClass("stars_test");
-});
-
-$("#add").click(function() {
-    if (!$('#name').val() || !$('#author').val() || !$('#cover').val()) {
-        alert('Enter the correct data');
-    } else {
-        let reader  = new FileReader();
-        let cover_url;
-
-        reader.onloadend = function () {
-            cover_url = reader.result;
-            $('.books_view').append(add_book($("#name").val(), $("#author").val(), cover_url));
-        }
-
-        reader.readAsDataURL($('#cover')[0].files[0]);
-        $(this).attr('rel', 'modal:close');
-    }
-});
-
-function add_book(name, author, cover_url) {
+function add_book(name, author, cover_url, rating) {
 
     let book = $('<div>', {
         class: 'book'
@@ -81,4 +51,9 @@ function add_book(name, author, cover_url) {
     return book;
 }
 
-//if ($('#name,#author,#cover').val() == '') {
+function add_rating(rating) {
+    let book_rating = [];
+    if(rating = null || 0) {
+
+    }
+}
