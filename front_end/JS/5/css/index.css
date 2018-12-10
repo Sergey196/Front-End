@@ -78,3 +78,7 @@
 .add_book_action:active {
     background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
+
+.event {
+    width: 100%;
+}

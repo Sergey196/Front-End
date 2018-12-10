@@ -1,4 +1,4 @@
-function add_book(name, author, cover_url, rating) {
+function add_book(name, author, cover_url) {
 
     let book = $('<div>', {
         class: 'book'
@@ -51,9 +51,17 @@ function add_book(name, author, cover_url, rating) {
     return book;
 }
 
-function add_rating(rating) {
+/*function add_rating(rating) {
     let book_rating = [];
-    if(rating = null || 0) {
+    if(rating == null || rating == 0) {
+        book_rating = [
+            $('<span>',{ "class": "star",}).append('&#9734;'),
+            $('<span>',{ "class": "star" }).append('&#9734;'),
+            $('<span>',{ "class": "star" }).append('&#9734;'),
+            $('<span>',{ "class": "star" }).append('&#9734;'),
+            $('<span>',{ "class": "star" }).append('&#9734;')
+        ]
+    } else {
 
     }
-}
+}*/

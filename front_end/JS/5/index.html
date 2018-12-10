@@ -11,17 +11,17 @@
         <link href="css/book.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-
+        <script src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </head>
     <body>
         <div id="add_book" class="modal">
-            <div>Name:</div>
+            <span>Name:</span>
             <p><input id = "name" maxlength = "25" size = "40" ></p>
-            <div>Author:</div>
+            <span>Author:</span>
             <p><input id = "author" maxlength = "25" size = "40" ></p>
-            <div>Cover:</div>
+            <span>Cover:</span>
             <p><input id = "cover" type="file"></p><br>
             <div class="add_book_action_buttons">
                 <a id = 'add' class = 'add_book_action' href="#">Add</a><a class = 'add_book_action' href="#" rel="modal:close">Close</a>
@@ -43,7 +43,7 @@
                 </div>
                 <div class = "actions_line"></div>
                 <div class = "actions_settings">
-                    <div class = "actions_settings_item">
+                    <div id = 'now_reading' class = "actions_settings_item">
                         <i class = "fa fa-book icons" aria-hidden="true"></i>
                         Now reading
                     </div>
@@ -63,7 +63,7 @@
                         <i class = "fas fa-list icons"></i>
                         Washiest
                     </div>
-                    <div class = "actions_settings_item">
+                    <div id = 'history' class = "actions_settings_item">
                         <i class = "fas fa-history icons"></i>
                         History
                     </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class = "actions_line"></div>
                 <div class = "actions_warnings">
-                    <!-- текст -->
+                    <!-- текст --
                     <div class = "warning">
                         <i class = "fas fa-history icon_warning"></i>
                         <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
@@ -110,7 +110,7 @@
                         <i class="fas fa-history icon_warning"></i>
                         <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
                     </div>
-                    <!-- текст -->
+                    -- текст -->
                 </div>
             </div>
             <div class = "books">
@@ -150,6 +150,14 @@
                         </div>
                     </div>
                     -- текст -->
+                    <div id = 'book_info' class = "book_info">
+                        <span class = 'book_info_att' >Name</span><br><br>
+                        <span class = 'book_info_att' id = 'book_info_name'></span><br><br>
+                        <span class = 'book_info_att'>Tag:</span>
+                        <p><input class = 'book_info_att' id = "tag" maxlength = "25" size = "40" ></p>
+                        <button class = 'book_info_att' id = 'add_tag'>Add</button>
+                        <span class = 'book_info_att' id = "tags"></span>
+                    </div>
                 </div>
             </div>
             <div class = "low_panel">
@@ -161,13 +169,14 @@
                 </div>
             </div>
         </div>
-        <!---- <script type="text/javascript" src="index.js"></script>--->
-
         <script src="js/EventEmitter.js"></script>
         <script src="js/Model.js"></script>
         <script src="js/Controller.js"></script>
         <script src="js/View.js"></script>
         <script src="js/core.js"></script>
         <script src="js/actions/add_book.js"></script>
+        <script src="js/actions/add_book_warning.js"></script>
+        <script src="js/actions/add_rating_warning.js"></script>
+        <script src="js/actions/find_book.js"></script>
     </body>
 </html>

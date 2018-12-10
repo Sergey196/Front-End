@@ -71,7 +71,7 @@
     direction: rtl;
 }
 
-.stars_test {
+.star_active {
     color: #cc6600;
 }
 
@@ -79,4 +79,17 @@
     width: 500px;
     height: 500px;
     background: #0f0830;
+}
+
+.book_info {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.book_info_att {
+    margin-left: 20px;
+    margin-top: 5px;
 }
