@@ -59,12 +59,22 @@
     width: 100%;
 }
 
-.stars > .star:hover:before,
+/*.stars > .star:hover:before,
 .stars > .star:hover ~ .star:before {
     content: "\2605";
     position: absolute;
     color: #cc6600;
+}*/
+/*.star:hover,
+.star:hover ~ .star {
+    color: #000000;
 }
+
+.star:hover:before,
+.star:hover ~ .star:before {
+    content: "\2605";
+}*/
+
 
 .stars {
     unicode-bidi: bidi-override;

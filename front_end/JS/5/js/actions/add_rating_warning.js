@@ -1,4 +1,4 @@
-function add_book_rating(star) {
+function add_book_rating(name, count) {
     //alert(star.nextAll().length);
     //alert(star.parent().parent().parent().find($('.book_name')).text());
     //alert(star.closest('.book_name').text());
@@ -14,9 +14,9 @@ function add_book_rating(star) {
         class: 'warning_text',
     });
 
-    let numbersOfStars = star.nextAll().length + 1;
+    //let numbersOfStars = star.nextAll().length + 1;
 
-    warning_text.append('Added ' + numbersOfStars + ' stars by <a href="#">' + star.parent().parent().parent().find($('.book_name')).text() + '</a>');
+    warning_text.append('Added ' + count + ' stars by <a href="#">' + name + '</a>');
 
     warning.append(icon_time);
     warning.append(warning_text);

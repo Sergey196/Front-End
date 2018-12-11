@@ -1,6 +1,8 @@
 let books;
 let history;
 
+let book;
+
 function Model() {
     books = [];
     history = [];
@@ -11,9 +13,7 @@ function Model() {
 }
 
 Model.prototype.add_book = function(name, author, cover, add_button) {
-    //panel.children().remove();
-    //panel.append(all_books());
-    if (name || author || cover) {
+    if (name.length !==0 && author.length !==0 && cover.val().length !==0) {
         add_button.attr('rel', 'modal:close');
         let reader = new FileReader();
         let onAddBook= this.onAllBooks;
@@ -46,38 +46,21 @@ Model.prototype.add_book = function(name, author, cover, add_button) {
     }
 };
 
-Model.prototype.add_rating = function(star) {
-    star.html('&#9734;');
-    star.addClass(".star");
-    star.nextAll().html('&#9734;');
-    star.nextAll().addClass(".star");
-    star.prevAll().html('&#9734;');
-    star.prevAll().addClass(".star");
-
-    star.html('&#9733;');
-    star.addClass(".star_active");
-    star.nextAll().html('&#9733;');
-    star.nextAll().addClass(".star_active");
+Model.prototype.add_rating = function(name, author, count) {
+    this.book = find_book(name, author);
+    this.book.rating = count;
 
     let event = {
         data: dateFormat(new Date(), "dddd, mmmm dS, yyyy, h:MM:ss TT"),
-        text: add_book_rating(star)
+        text: add_book_rating(name, count)
     };
     history.push(event);
     this.onAddEvent.notify(event.text.append(event.data));
 };
 
-Model.prototype.all_reading = function(panel) {
+Model.prototype.all_reading = function() {
     this.onAllBooks.notify(all_books());
 };
-
-function all_books() {
-    let all_books= [];
-    books.forEach(function(element) {
-        all_books.push(add_book(element.name, element.author, element.img_url));
-    });
-    return all_books;
-}
 
 Model.prototype.history = function() {
     let all_history = [];
@@ -92,11 +75,23 @@ Model.prototype.history = function() {
 };
 
 Model.prototype.book_info = function(name, author) {
-    this.onBook.notify(find_book(name, author));
+    this.book = find_book(name, author);
+    this.onBook.notify(this.book);
 };
 
 Model.prototype.add_tag = function(tag) {
-    alert(tag)
+    this.book.tags.push(tag);
+    this.onBook.notify(this.book);
+};
+
+Model.prototype.favourite_books = function(tag) {
+    this.onAllBooks.notify(all_favourite_books());
+};
+
+Model.prototype.search = function(val) {
+    if(val.length !== 0) {
+        this.onAllBooks.notify(searcher(val));
+    }
 };
 
 

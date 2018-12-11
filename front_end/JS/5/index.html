@@ -55,7 +55,7 @@
                         <i class = "fas fa-shopping-cart icons"></i>
                         Buy Books
                     </div>
-                    <div class = "actions_settings_item">
+                    <div id = "favourite_books" class = "actions_settings_item">
                         <i class = "fas fa-star icons"></i>
                         Favourite Books
                     </div>
@@ -151,8 +151,10 @@
                     </div>
                     -- текст -->
                     <div id = 'book_info' class = "book_info">
-                        <span class = 'book_info_att' >Name</span><br><br>
+                        <span class = 'book_info_att' >Name:  </span>
                         <span class = 'book_info_att' id = 'book_info_name'></span><br><br>
+                        <span class = 'book_info_att' >Author:  </span>
+                        <span class = 'book_info_att' id = 'book_info_author'></span><br><br>
                         <span class = 'book_info_att'>Tag:</span>
                         <p><input class = 'book_info_att' id = "tag" maxlength = "25" size = "40" ></p>
                         <button class = 'book_info_att' id = 'add_tag'>Add</button>
@@ -178,5 +180,6 @@
         <script src="js/actions/add_book_warning.js"></script>
         <script src="js/actions/add_rating_warning.js"></script>
         <script src="js/actions/find_book.js"></script>
+        <script src="js/actions/rating.js"></script>
     </body>
 </html>
