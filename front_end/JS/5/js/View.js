@@ -4,7 +4,7 @@ function View(model, controller) {
 }
 
 View.prototype.init = function () {
-    var that = this;
+    let that = this;
 
     this.model.onAllBooks.subscribe(function (newCounterValue) {
         that.addBook(newCounterValue);
@@ -31,7 +31,7 @@ View.prototype.init = function () {
     });
 
     $('.books_view').on('click','.star', function() {
-        add_rafting($(this));
+        add_rating($(this));
         let count = $(this).nextAll().length + 1;
         that.ctrl.add_rating($(this).closest('.book').children('.book_name').text(), $(this).closest('.book').children('.book_author').text(), count);
     });
@@ -98,7 +98,7 @@ function remove_children() {
     $('.books_view').children('#book_info').hide();
 };
 
-function add_rafting(star) {
+function add_rating(star) {
     /*star.html('&#9734;');
     star.addClass(".star");
     star.nextAll().html('&#9734;');
