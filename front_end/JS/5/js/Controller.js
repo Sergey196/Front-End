@@ -3,12 +3,12 @@ function Controller() {
     this.view = new View(this.model, this);
 }
 
-Controller.prototype.add_book = function (name, author, cover, add_button) {
-    this.model.add_book(name, author, cover, add_button);
+Controller.prototype.add_book = function (name, author, cover) {
+    this.model.add_book(name, author, cover);
 };
 
-Controller.prototype.add_rating = function (name, author, count) {
-    this.model.add_rating(name, author, count);
+Controller.prototype.add_rating = function (count) {
+    this.model.add_rating(count);
 };
 
 Controller.prototype.history = function () {

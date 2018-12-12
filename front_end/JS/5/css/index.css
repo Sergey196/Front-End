@@ -39,46 +39,30 @@
     align-items: stretch;
 }
 
-#add_book {
-    width: 500px;
-    height: 300px;
-}
-
-.add_book_action {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    outline: none;
-    border-width: 2px 0;
-    border-style: solid none;
-    border-color: #FDBE33 #000 #D77206;
-    border-radius: 6px;
-    background: linear-gradient(#F3AE0F, #E38916) #E38916;
-    transition: 0.2s;
-    width: 80px;
-    height: 30px;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.add_book_action_buttons {
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-.add_book_action:hover {
-    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
-}
-.add_book_action:active {
-    background: linear-gradient(#f59500, #f5ae00) #f59500;
-}
-
 .event {
     width: 100%;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

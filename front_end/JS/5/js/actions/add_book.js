@@ -31,39 +31,12 @@ function add_book(name, author, cover_url, rating) {
         class: 'stars'
     });
 
-
     book_img.append(book_img_view);
     book.append(book_img);
     book.append(book_name);
     book.append(book_author);
 
-    /*stars.append([
-        $('<span>',{ "class": "star",}).append('&#9734;'),
-        $('<span>',{ "class": "star" }).append('&#9734;'),
-        $('<span>',{ "class": "star" }).append('&#9734;'),
-        $('<span>',{ "class": "star" }).append('&#9734;'),
-        $('<span>',{ "class": "star" }).append('&#9734;')
-    ]);*/
-    //stars.append(rating_book(rating));
-
-
-    //book_rating.append(stars);
     book_rating.append(rating_book(rating));
     book.append(book_rating);
     return book;
 }
-
-/*function add_rating(rating) {
-    let book_rating = [];
-    if(rating == null || rating == 0) {
-        book_rating = [
-            $('<span>',{ "class": "star",}).append('&#9734;'),
-            $('<span>',{ "class": "star" }).append('&#9734;'),
-            $('<span>',{ "class": "star" }).append('&#9734;'),
-            $('<span>',{ "class": "star" }).append('&#9734;'),
-            $('<span>',{ "class": "star" }).append('&#9734;')
-        ]
-    } else {
-
-    }
-}*/

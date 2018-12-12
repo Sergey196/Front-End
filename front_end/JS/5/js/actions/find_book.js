@@ -29,7 +29,9 @@ function all_favourite_books() {
 function searcher(val) {
     let all_books= [];
     books.forEach(function(element) {
-        if(element.name.indexOf(val) !== -1) {
+        if(val.length === 0) {
+            all_books.push(add_book(element.name, element.author, element.img_url, element.rating));
+        } else if(element.name.indexOf(val) !== -1) {
             all_books.push(add_book(element.name, element.author, element.img_url, element.rating));
         }
     });

@@ -10,11 +10,11 @@ function Model() {
     this.onAddEvent = new EventEmitter();
     this.onHistory = new EventEmitter();
     this.onBook = new EventEmitter();
+    this.onAddRaiting = new EventEmitter();
 }
 
-Model.prototype.add_book = function(name, author, cover, add_button) {
+Model.prototype.add_book = function(name, author, cover) {
     if (name.length !==0 && author.length !==0 && cover.val().length !==0) {
-        add_button.attr('rel', 'modal:close');
         let reader = new FileReader();
         let onAddBook= this.onAllBooks;
         let onAddEvent = this.onAddEvent;
@@ -29,16 +29,18 @@ Model.prototype.add_book = function(name, author, cover, add_button) {
                 rating: null
             };
 
-            //onAddBook.notify(add_book(book.name, book.author, book.img_url));
             books.push(book);
             onAddBook.notify(all_books());
 
             let event = {
+                type: 'add_book',
                 data: dateFormat(new Date(), "dddd, mmmm dS, yyyy, h:MM:ss TT"),
-                text: add_book_warning(book.name, book.author)
+                name: book.name,
+                author: book.author
             };
             history.push(event);
-            onAddEvent.notify(event.text.append(event.data));
+
+            onAddEvent.notify(last_warnings());
         };
         reader.readAsDataURL(cover[0].files[0]);
     } else {
@@ -46,16 +48,17 @@ Model.prototype.add_book = function(name, author, cover, add_button) {
     }
 };
 
-Model.prototype.add_rating = function(name, author, count) {
-    this.book = find_book(name, author);
+Model.prototype.add_rating = function(count) {
     this.book.rating = count;
-
     let event = {
+        type: 'add_rating',
         data: dateFormat(new Date(), "dddd, mmmm dS, yyyy, h:MM:ss TT"),
-        text: add_book_rating(name, count)
+        name: this.book.name,
+        count: count
     };
     history.push(event);
-    this.onAddEvent.notify(event.text.append(event.data));
+    this.onAddEvent.notify(last_warnings());
+    this.onAddRaiting.notify(add_rating_book(count));
 };
 
 Model.prototype.all_reading = function() {
@@ -63,20 +66,13 @@ Model.prototype.all_reading = function() {
 };
 
 Model.prototype.history = function() {
-    let all_history = [];
-    history.forEach(function(element) {
-        let warning = $('<div>', {
-            class: 'event',
-            text: element.text.text() + '  ' + element.data
-        });
-        all_history.push(warning);
-    });
-    this.onHistory.notify(all_history);
+    this.onHistory.notify(all_warnings());
 };
 
 Model.prototype.book_info = function(name, author) {
     this.book = find_book(name, author);
     this.onBook.notify(this.book);
+    this.onAddRaiting.notify(add_rating_book(0));
 };
 
 Model.prototype.add_tag = function(tag) {

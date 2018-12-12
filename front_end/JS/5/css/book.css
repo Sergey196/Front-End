@@ -59,30 +59,33 @@
     width: 100%;
 }
 
-/*.stars > .star:hover:before,
-.stars > .star:hover ~ .star:before {
-    content: "\2605";
-    position: absolute;
-    color: #cc6600;
-}*/
-/*.star:hover,
-.star:hover ~ .star {
-    color: #000000;
+.book_rating_stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
 }
 
-.star:hover:before,
-.star:hover ~ .star:before {
-    content: "\2605";
-}*/
+.book_rating_star_inactive {
+    color: #cc9259;
+}
+
+.book_rating_star_active {
+    color: #cc511c;
+}
+
+.book_rating_star {
+    cursor: pointer;
+}
+
+.book_rating_star:hover,
+.book_rating_star:hover ~ .book_rating_star {
+    color: #cc511c;
+}
 
 
 .stars {
     unicode-bidi: bidi-override;
     direction: rtl;
-}
-
-.star_active {
-    color: #cc6600;
 }
 
 .modal {
@@ -94,7 +97,7 @@
 .book_info {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-color: #ffffff;
 }
