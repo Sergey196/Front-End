@@ -16,17 +16,17 @@
     </head>
     <body>
         <div class="b-popup">
-            <div id="add_book" class="b-popup-content">
+            <form id="add_book" class="b-popup-content">
                 <span>Name:</span>
-                <p><input id = "name" maxlength = "25" size = "40" ></p>
+                <p><input required id = "name" maxlength = "25" size = "40" ></p>
                 <span>Author:</span>
-                <p><input id = "author" maxlength = "25" size = "40" ></p>
+                <p><input required id = "author" maxlength = "25" size = "40" ></p>
                 <span>Cover:</span>
-                <p><input id = "cover" type="file"></p><br>
+                <p><input required multiple accept="image/x-png,image/gif,image/jpeg" id = "cover" type="file"></p><br>
                 <div class="add_book_action_buttons">
-                    <button id = 'add' class = 'add_book_action'>Add</button><button id = 'close' class = 'add_book_action'>Close</button>
+                    <input type="submit" id = 'add' class = 'add_book_action' value="Add"><button id = 'close' class = 'add_book_action'>Close</button>
                 </div>
-            </div>
+            </form>
         </div>
         <div class = "panel">
             <div class = "top_panel">

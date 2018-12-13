@@ -34,8 +34,13 @@ View.prototype.init = function () {
         $('.b-popup').show();
     });
 
-    $("#add").click(function() {
+    /*$("#add").click(function() {
         that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
+    });*/
+
+    $( "#add_book" ).submit(function(event) {
+        that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
+        event.preventDefault();
     });
 
     $("#close").click(function() {
