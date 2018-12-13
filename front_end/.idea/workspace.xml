@@ -2,8 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ed9a44-5bd6-4124-bde0-fa88ec4e75fd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/JS/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/js/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/Model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Sergey_Utkin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/front_end.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1/1/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1/1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1/2/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/1/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/2/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/1/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/2/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/3/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/4/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/3/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/4/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/1/web.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/2/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/2/page 1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/2/page 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/3/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/3/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/3/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/15.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/25.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/1/9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/2/calculator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/3/calculator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/3/fff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/3/test2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/4/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/4/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/actions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/add_book_menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/book.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/books.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/low_panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/top_panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/Controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/EventEmitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/Model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/View.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/add_book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test5/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test5/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/Controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/EventEmitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/Model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/View.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7/index.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,91 +115,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="front_end" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JS/5/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/actions/find_book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/View.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/EventEmitter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/core.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/Controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/css/low_panel.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/css/top_panel.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/css/add_book_menu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -200,8 +221,8 @@
         <option value="$PROJECT_DIR$/JS/5/css/add_book_menu.css" />
         <option value="$PROJECT_DIR$/JS/5/js/Controller.js" />
         <option value="$PROJECT_DIR$/JS/5/js/View.js" />
-        <option value="$PROJECT_DIR$/JS/5/js/Model.js" />
         <option value="$PROJECT_DIR$/JS/5/index.html" />
+        <option value="$PROJECT_DIR$/JS/5/js/Model.js" />
       </list>
     </option>
   </component>
@@ -218,94 +239,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="test7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,7 +247,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JQuery-CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/JS/3/calculator.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -394,19 +328,18 @@
       <workItem from="1544076961505" duration="262000" />
       <workItem from="1544077289181" duration="62304000" />
       <workItem from="1544595724986" duration="17971000" />
-      <workItem from="1544682225497" duration="3239000" />
+      <workItem from="1544682225497" duration="4499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315765000" />
+    <option name="totallyTimeSpent" value="317025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16069546" />
-      <window_info id="Structure" order="1" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16069546" />
+      <window_info active="true" id="Structure" order="1" visible="true" weight="0.24973656" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
@@ -664,17 +597,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
         </state>
       </provider>
     </entry>
