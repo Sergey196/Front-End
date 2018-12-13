@@ -14,7 +14,6 @@ function Model() {
 }
 
 Model.prototype.add_book = function(name, author, cover) {
-    //alert(cover[0].type);
     if (true) {
         let reader = new FileReader();
         let onAddBook= this.onAllBooks;
