@@ -1,0 +1,68 @@
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_panel {
+    width: 100%;
+    height: 50px;
+    background-color: #2f3649;
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: stretch;
+}
+
+.actions {
+    width: 25%;
+    height: 1300px;
+    background-color: #1f2638;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.books {
+    width: 75%;
+    height: 1300px;
+    background-color: white;
+}
+
+.low_panel {
+    width: 100%;
+    height: 50px;
+    background-color: #3c424e;
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: stretch;
+}
+
+.event {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
