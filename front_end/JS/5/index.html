@@ -10,23 +10,45 @@
         <link href="css/books.css" rel="stylesheet">
         <link href="css/book.css" rel="stylesheet">
         <link href="css/add_book_menu.css" rel="stylesheet">
+        <link href="css/BookEditor.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <script src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="b-popup">
-            <form id="add_book" class="b-popup-content">
+            <div id="add_book" class="b-popup-content">
                 <span>Name:</span>
-                <p><input required id = "name" maxlength = "25" size = "40" ></p>
+                <p><input id = "name" maxlength = "25" size = "40" ></p>
                 <span>Author:</span>
-                <p><input required id = "author" maxlength = "25" size = "40" ></p>
+                <p><input id = "author" maxlength = "25" size = "40" ></p>
                 <span>Cover:</span>
-                <p><input required accept="image/x-png,image/gif,image/jpeg" id = "cover" type="file"></p><br>
+                <p><input accept="image/x-png,image/gif,image/jpeg" id = "cover" type="file"></p><br>
                 <div class="add_book_action_buttons">
-                    <input type="submit" id = 'add' class = 'add_book_action' value="Add"><button id = 'close' class = 'add_book_action'>Close</button>
+                    <button id = 'add' class = 'add_book_action' value="Add"><button id = 'close' class = 'add_book_action'>Close</button>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bookEditor">
+                <span class = 'book_info_att' >Name:  </span>
+                <span class = 'book_info_att book_info_name'></span><br><br>
+                <span class = 'book_info_att' >Author:  </span>
+                <span class = 'book_info_att book_info_author'></span><br><br>
+                <span class = 'book_info_att'>Tag:</span>
+                <p><input class = 'book_info_att tag' maxlength = "25" size = "40" ></p>
+                <button class = 'book_info_att add_tag'>Add</button>
+                <span class = 'book_info_att tags'></span><br><br>
+                <span class = 'book_info_att'>Rating:</span><br>
+                <div class='book_info_att book_rating_stars'>
+                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+                </div>
+                <button class = 'book_info_att closeBookEditor'>Close</button>
+            </div>
         </div>
         <div class = "panel">
             <div class = "top_panel">
@@ -151,6 +173,7 @@
                         </div>
                     </div>
                     -- текст -->
+                    <!-- текст --
                     <div id = 'book_info' class = "book_info">
                         <span class = 'book_info_att' >Name:  </span>
                         <span class = 'book_info_att' id = 'book_info_name'></span><br><br>
@@ -169,6 +192,7 @@
                             <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
                         </div>
                     </div>
+                    -- текст -->
                 </div>
             </div>
             <div class = "low_panel">

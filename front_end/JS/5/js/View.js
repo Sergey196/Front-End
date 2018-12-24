@@ -26,6 +26,10 @@ View.prototype.init = function () {
         that.add_rating(newCounterValue);
     });
 
+    this.model.onAddTag.subscribe(function (newCounterValue) {
+        that.addTag(newCounterValue);
+    });
+
     $('.books_view').on('click','.book_img', function(){
         that.ctrl.book_info($(this).parent().children('.book_name').text(), $(this).parent().children('.book_author').text());
     });
@@ -34,11 +38,7 @@ View.prototype.init = function () {
         $('.b-popup').show();
     });
 
-    /*$("#add").click(function() {
-        that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
-    });*/
-
-    $( "#add_book" ).submit(function(event) {
+    $("#add_book").submit(function(event) {
         that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
         event.preventDefault();
     });
@@ -47,13 +47,14 @@ View.prototype.init = function () {
         $('.b-popup').hide();
     });
 
-    $('.books_view').on('click','.book_rating_star', function() {
+    $('.bookEditor').on('click','.book_rating_star', function() {
         let count = $(this).nextAll().length + 1;
         that.ctrl.add_rating(count);
     });
 
-    $('.books_view').on('click','#add_tag', function() {
-        that.ctrl.add_tag($('#tag').val());
+
+    $(".add_tag").click(function() {
+        that.ctrl.add_tag($('.tag').val());
     });
 
     $("#history").click(function() {
@@ -70,6 +71,10 @@ View.prototype.init = function () {
 
     $(".search_searcher").on('input', function() {
         that.ctrl.search($(".search_searcher").val());
+    });
+
+    $(".closeBookEditor").click(function() {
+        that.ctrl.all_reading();
     });
 };
 
@@ -90,24 +95,31 @@ View.prototype.allHistory = function (data) {
 };
 
 View.prototype.bookInfo = function (data) {
-    remove_children();
+    //remove_children();
 
-    $('#book_info').show();
-    $('#tags').text('');
-    $('#book_info_name').text(data.name);
-    $('#book_info_author').text(data.author);
+    //$('#book_info').show();
+    $(".banner").show();
+    //$('#tags').text('');
+    $('.book_info_name').text(data.name);
+    $('.book_info_author').text(data.author);
     data.tags.forEach(function(element) {
-        $('#tags').append(element + ' ');
+        $('.tags').append(element + ' ');
     });
+};
+
+View.prototype.addTag = function(tag) {
+    $('.tags').append(tag + ' ');
 };
 
 View.prototype.add_rating = function(stars) {
     $('.book_rating_stars').remove();
-    $('.book_info').append(stars);
+    //$('.closeBookEditor').insertBefore(stars);
+    //$('.bookEditor').append(stars);
+    $(stars).insertBefore('.closeBookEditor');
 };
 
 function remove_children() {
     $('.books_view').children('.book').remove();
     $('.books_view').children('.event').remove();
-    $('.books_view').children('#book_info').hide();
+    $('.banner').hide();
 };

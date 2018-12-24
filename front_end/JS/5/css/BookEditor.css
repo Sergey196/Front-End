@@ -1,0 +1,54 @@
+.banner {
+    display: none;
+    width: 100%;
+    height: 2000px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+}
+.banner .bookEditor {
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+
+    width: 500px;
+    height: 300px;
+}
+
+.book_info_att {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.book_rating_stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+
+.book_rating_star_inactive {
+    color: #cc9259;
+}
+
+.book_rating_star_active {
+    color: #cc511c;
+}
+
+.book_rating_star {
+    cursor: pointer;
+}
+
+.book_rating_star:hover,
+.book_rating_star:hover ~ .book_rating_star {
+    color: #cc511c;
+}
+
+
+/*.stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}*/

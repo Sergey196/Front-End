@@ -11,10 +11,12 @@ function Model() {
     this.onHistory = new EventEmitter();
     this.onBook = new EventEmitter();
     this.onAddRaiting = new EventEmitter();
+    this.onAddTag = new EventEmitter();
 }
 
 Model.prototype.add_book = function(name, author, cover) {
-    if (true) {
+    let book = find_book(name, author);
+    if (book == undefined) {
         let reader = new FileReader();
         let onAddBook= this.onAllBooks;
         let onAddEvent = this.onAddEvent;
@@ -44,7 +46,7 @@ Model.prototype.add_book = function(name, author, cover) {
         };
         reader.readAsDataURL(cover[0].files[0]);
     } else {
-        alert('Enter the correct data');
+        alert('This book already exists');
     }
 };
 
@@ -77,7 +79,8 @@ Model.prototype.book_info = function(name, author) {
 
 Model.prototype.add_tag = function(tag) {
     this.book.tags.push(tag);
-    this.onBook.notify(this.book);
+    //this.onBook.notify(this.book);
+    this.onAddTag.notify(tag);
 };
 
 Model.prototype.favourite_books = function(tag) {

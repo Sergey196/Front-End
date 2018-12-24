@@ -8,10 +8,17 @@ function add_book_rating(name, count) {
     });
 
     let warning_text = $('<div>', {
-        class: 'warning_text',
+        class: 'warning_text'
     });
 
-    warning_text.append('Added ' + count + ' stars by <a href="#">' + name + '</a>');
+    let book_name = $('<a>', {
+        href: '#',
+        text: name
+    });
+
+    //warning_text.append('Added ' + count + ' stars by <a href="#">' + name + '</a>');
+    warning_text.append('Added ' + count + ' stars by ');
+    warning_text.append(book_name);
 
     warning.append(icon_time);
     warning.append(warning_text);
@@ -28,10 +35,25 @@ function add_book_warning(name, author) {
     });
 
     let warning_text = $('<div>', {
-        class: 'warning_text',
+        class: 'warning_text'
     });
 
-    warning_text.append('You added <a href="#">' + name + '</a> by <a href="#">' + author + '</a> to your must reload titles');
+    let book_name = $('<a>', {
+        href: '#',
+        text: name
+    });
+
+    let book_author = $('<a>', {
+        href: '#',
+        text: author
+    });
+
+    //warning_text.append('You added <a href="#">' + name + '</a> by <a href="#">' + author + '</a> to your must reload titles');
+    warning_text.append('You added ');
+    warning_text.append(book_name);
+    warning_text.append(' by ');
+    warning_text.append(book_author);
+    warning_text.append(' to your must reload titles');
 
     warning.append(icon_time);
     warning.append(warning_text);
