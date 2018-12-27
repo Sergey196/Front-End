@@ -35,16 +35,26 @@ View.prototype.init = function () {
     });
 
     $(".add_book_button").click(function() {
-        $('.b-popup').show();
+        $('.bannerAddBookMenu').show();
     });
 
-    $("#add_book").submit(function(event) {
-        that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
-        event.preventDefault();
+    $("#add").click(function() {
+        $(".name").removeClass("visible").addClass('hidden');
+        $(".author").removeClass("visible").addClass('hidden');
+        $(".cover").removeClass("visible").addClass('hidden');
+        if($('#name').val().length == 0) {
+            $(".name").removeClass("hidden").addClass('visible');
+        } else if($('#author').val().length == 0) {
+            $(".author").removeClass("hidden").addClass('visible');
+        } else if($('#cover').val().length == 0) {
+            $(".cover").removeClass("hidden").addClass('visible');
+        } else {
+            that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
+        }
     });
 
     $("#close").click(function() {
-        $('.b-popup').hide();
+        $('.bannerAddBookMenu').hide();
     });
 
     $('.bookEditor').on('click','.book_rating_star', function() {
@@ -79,27 +89,72 @@ View.prototype.init = function () {
 };
 
 View.prototype.addBook = function (data) {
-    $('.b-popup').hide();
+    $('.bannerAddBookMenu').hide();
     remove_children();
-    $('.books_view').append(data);
+
+    data.forEach(function(element) {
+        let book = $('body').children('.book').clone();
+        book.removeAttr('style');
+        book.find('.book_img_view').attr("src", element.img_url);
+        book.find('.book_name').append(element.name);
+        book.find('.book_author').append(element.author);
+        book.find('.book_rating').append(rating_book(element.rating));
+        $('.books_view').append(book);
+    });
 };
 
 View.prototype.addEvent = function (data) {
     $('.actions_warnings').empty();
-    $('.actions_warnings').append(data);
+    //$('.actions_warnings').append(data);
+    data.forEach(function(element) {
+        if(element.type === 'add_book') {
+            let event = $('body').children('.addBookWarning').clone();
+            event.removeAttr('style');
+            event.find('.warning_text a').first().append(element.name);
+            event.find('.warning_text a').last().append(element.author);
+            $('.actions_warnings').append(event);
+        } else {
+            let event = $('body').children('.addStarsWarning').clone();
+            event.removeAttr('style');
+            event.find('span').append(element.count);
+            event.find('a').append(element.name);
+            $('.actions_warnings').append(event);
+        }
+    });
 };
 
 View.prototype.allHistory = function (data) {
     remove_children();
-    $('.books_view').append(data);
+
+    data.forEach((val, key, arr) => {
+        if(val.type === 'add_book') {
+            let history = $('body').children('.event').clone();
+            history.removeAttr('style');
+            history.append('Add book: ');
+            history.append(val.name);
+            history.append(' author: ');
+            history.append(val.author);
+            history.append('  ');
+            history.append(val.data);
+            $('.books_view').append(history);
+        } else {
+            let history = $('body').children('.event').clone();
+            history.removeAttr('style');
+            history.append('Add rating by: ');
+            history.append(val.name);
+            history.append(' rating: ');
+            history.append(val.count);
+            history.append('  ');
+            history.append(val.data);
+            $('.books_view').append(history);
+        }
+    });
 };
 
 View.prototype.bookInfo = function (data) {
     //remove_children();
 
-    //$('#book_info').show();
-    $(".banner").show();
-    //$('#tags').text('');
+    $(".bannerBookEditor").show();
     $('.book_info_name').text(data.name);
     $('.book_info_author').text(data.author);
     data.tags.forEach(function(element) {
@@ -113,13 +168,11 @@ View.prototype.addTag = function(tag) {
 
 View.prototype.add_rating = function(stars) {
     $('.book_rating_stars').remove();
-    //$('.closeBookEditor').insertBefore(stars);
-    //$('.bookEditor').append(stars);
     $(stars).insertBefore('.closeBookEditor');
 };
 
 function remove_children() {
     $('.books_view').children('.book').remove();
     $('.books_view').children('.event').remove();
-    $('.banner').hide();
+    $('.bannerBookEditor').hide();
 };

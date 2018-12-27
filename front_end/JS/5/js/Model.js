@@ -32,7 +32,7 @@ Model.prototype.add_book = function(name, author, cover) {
             };
 
             books.push(book);
-            onAddBook.notify(all_books());
+            onAddBook.notify(books);
 
             let event = {
                 type: 'add_book',
@@ -64,7 +64,7 @@ Model.prototype.add_rating = function(count) {
 };
 
 Model.prototype.all_reading = function() {
-    this.onAllBooks.notify(all_books());
+    this.onAllBooks.notify(books);
 };
 
 Model.prototype.history = function() {

@@ -54,6 +54,17 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #666;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.none {
+    display: none;
+}
 
 
 
