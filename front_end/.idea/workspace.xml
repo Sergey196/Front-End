@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ed9a44-5bd6-4124-bde0-fa88ec4e75fd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/css/BookEditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/BookEditor.css" afterDir="false" />
@@ -14,6 +13,8 @@
       <change beforePath="$PROJECT_DIR$/JS/5/js/actions/add_book.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test2/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test2/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test3/index.css" beforeDir="false" />
@@ -31,8 +32,8 @@
       <change beforePath="$PROJECT_DIR$/test6/core.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test6/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test7/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -392,12 +393,12 @@
       <workItem from="1544694081602" duration="1285000" />
       <workItem from="1545375281027" duration="290000" />
       <workItem from="1545634091649" duration="12639000" />
-      <workItem from="1545808387479" duration="20312000" />
+      <workItem from="1545808387479" duration="20000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351551000" />
+    <option name="totallyTimeSpent" value="351239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
