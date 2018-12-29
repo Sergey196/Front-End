@@ -1,4 +1,4 @@
-.bannerBookEditor {
+.book-editor__banner {
     display: none;
     width: 100%;
     height: 2000px;
@@ -8,8 +8,9 @@
     top: 0;
 
 }
-.bannerBookEditor .bookEditor {
-    margin: 40px auto;
+.book-editor__banner .book-editor {
+    margin-top: 20%;
+    margin-left: 40%;
     padding: 10px;
     background-color: #c5c5c5;
     border-radius: 5px;
@@ -19,31 +20,31 @@
     height: 300px;
 }
 
-.book_info_att {
+.book-editor__element {
     margin-left: 20px;
     margin-top: 5px;
 }
 
-.book_rating_stars {
+.book-editor__rating-stars {
     display: flex;
     flex-direction: row-reverse;
     justify-content:flex-end;
 }
 
-.book_rating_star_inactive {
+.book-editor__rating-star-inactive {
     color: #cc9259;
 }
 
-.book_rating_star_active {
+.book-editor__rating-star-active {
     color: #cc511c;
 }
 
-.book_rating_star {
+.book-editor__rating-star {
     cursor: pointer;
 }
 
-.book_rating_star:hover,
-.book_rating_star:hover ~ .book_rating_star {
+.book-editor__rating-star:hover,
+.book-editor__rating-star:hover ~ .book-editor__rating-star {
     color: #cc511c;
 }
 

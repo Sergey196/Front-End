@@ -1,9 +1,9 @@
-.actions_line {
+.actions__line-splitter {
     height: 10px;
     background: linear-gradient(to top, #363836, #0f0830);
 }
 
-.add_book {
+.actions__add-book {
     height: 150px;
     background-color: #1f2638;
 
@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.actions_settings {
+.actions__settings {
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
     align-items: stretch;
 }
 
-.actions_popularity {
+.actions__tags {
     height: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -32,7 +32,7 @@
     align-items: stretch;
 }
 
-.actions_warnings {
+.actions__warnings {
     height: 470px;
     overflow:hidden;
 
@@ -42,7 +42,7 @@
     margin-top: 20px;
 }
 
-.add_book_button {
+.action__add-book__button {
     font-size: 20px;
     font-weight: 600;
     width: 180px;
@@ -72,11 +72,11 @@
 }
 
 
-.add_book_button:hover:not(:active) {
+.action__add-book__button:hover:not(:active) {
     background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
 }
 
-.add_book_button:active {
+.action__add-book__button:active {
     top: 1px;
     background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
     box-shadow:
@@ -85,7 +85,7 @@
             0 1px 1px rgba(255,255,255,.1);
 }
 
-.actions_settings_item {
+.actions__settings-item {
     flex: auto;
     color: #76727e;
     font-size: 16px;
@@ -95,7 +95,7 @@
     align-items: center;
 }
 
-.actions_popularity_item {
+.actions__tags__item {
     flex: auto;
     display: flex;
     align-items: center;
@@ -103,17 +103,17 @@
     font-size: 16px;
 }
 
-.actions_settings_item:hover {
+.actions__settings-item:hover {
     background-color: #16a4fa;
     color: white;
 }
 
-.actions_popularity_item:hover {
+.actions__tags__item:hover {
     background-color: #16a4fa;
     color: white;
 }
 
-.actions_popularity_item:hover [class *= icon_popularity] {
+.actions__tags__item:hover [class *= icon_popularity] {
     color: #0ab4dc;
 }
 
@@ -144,10 +144,10 @@
     color: blue;
 }
 
-.warning {
+.actions__warnings__warning {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 130px;
+    height: 50px;
     color: #454d60;
     font-size: 18px;
 }
@@ -159,7 +159,7 @@
     margin-left: 25px;
 }
 
-.warning_text {
+.warning__text {
     margin-bottom: 20px;
 }
 

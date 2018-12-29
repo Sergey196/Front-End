@@ -3,36 +3,40 @@ function Controller() {
     this.view = new View(this.model, this);
 }
 
-Controller.prototype.add_book = function (name, author, cover) {
-    this.model.add_book(name, author, cover);
+Controller.prototype.addBook = function (name, author, cover) {
+    this.model.addBook(name, author, cover);
 };
 
-Controller.prototype.add_rating = function (count) {
-    this.model.add_rating(count);
+Controller.prototype.addRating = function (count) {
+    this.model.addRating(count);
 };
 
-Controller.prototype.history = function () {
-    this.model.history();
+Controller.prototype.getHistoryEvents = function () {
+    this.model.getHistoryEvents();
 };
 
-Controller.prototype.book_info = function (name, author) {
-    this.model.book_info(name, author);
+Controller.prototype.getBookInfo = function (name, author) {
+    this.model.getBookInfo(name, author);
 };
 
-Controller.prototype.all_reading = function () {
-    this.model.all_reading();
+Controller.prototype.getAllBooks = function () {
+    this.model.getAllBooks();
 };
 
-Controller.prototype.add_tag = function (tag) {
-    this.model.add_tag(tag);
+Controller.prototype.addTag = function (tag) {
+    this.model.addTag(tag);
 };
 
-Controller.prototype.favourite_books = function () {
-    this.model.favourite_books();
+Controller.prototype.getFavouriteBooks = function () {
+    this.model.getFavouriteBooks();
 };
 
 Controller.prototype.search = function (val) {
     this.model.search(val);
+};
+
+Controller.prototype.filterByTags = function (tag) {
+    this.model.filterByTags(tag);
 };
 
 Controller.prototype.start = function () {

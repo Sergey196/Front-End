@@ -1,4 +1,5 @@
-.settings {
+.low-panel__settings {
+    color: #86e6ff;
     width: 50px;
     display: flex;
     justify-content:center;
@@ -7,7 +8,7 @@
     background-color: #1f2638;
 }
 
-.help {
+.low-panel__reference {
     width: 50px;
     display: flex;
     justify-content:center;

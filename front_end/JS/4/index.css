@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-.name {
+.add_book-menu__incorrect-name {
     height: 100px;
     width: 100%;
 

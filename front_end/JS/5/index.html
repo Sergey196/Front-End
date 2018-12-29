@@ -4,222 +4,168 @@
         <meta charset="UTF-8">
         <title>Title</title>
         <link href="css/index.css" rel="stylesheet">
-        <link href="css/top_panel.css" rel="stylesheet">
+        <link href="css/top-panel.css" rel="stylesheet">
         <link href="css/actions.css" rel="stylesheet">
-        <link href="css/low_panel.css" rel="stylesheet">
+        <link href="css/low-panel.css" rel="stylesheet">
         <link href="css/books.css" rel="stylesheet">
         <link href="css/book.css" rel="stylesheet">
-        <link href="css/add_book_menu.css" rel="stylesheet">
-        <link href="css/BookEditor.css" rel="stylesheet">
+        <link href="css/add-book-menu.css" rel="stylesheet">
+        <link href="css/book-editor.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <script src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="bannerAddBookMenu">
-            <div id="add_book" class="AddBookMenu">
+        <div class="add_book-menu__banner">
+            <div class="add-book-menu">
                 <span>Name:</span><br>
-                <input id = "name" maxlength = "25" size = "40" ><br>
-                <div class="name inputError hidden">The name is incorrect</div>
+                <input class = "add_book-menu__new-book-name" maxlength = "25" size = "40" ><br>
+                <div class="add_book-menu__incorrect-name input-error hidden">The name is incorrect or already exists</div>
                 <span>Author:</span><br>
-                <input id = "author" maxlength = "25" size = "40" >
-                <div class="author inputError hidden">The author is incorrect</div>
+                <input class = "add_book-menu__new-book-author" maxlength = "25" size = "40" >
+                <div class="add_book-menu__incorrect-author input-error hidden">The author is incorrect</div>
                 <span>Cover:</span><br>
-                <input accept="image/x-png,image/gif,image/jpeg" id = "cover" type="file">
-                <div class="cover inputError hidden">No image</div><br>
-                <div class="add_book_action_buttons">
-                    <button  id = 'add' class = 'add_book_action'>Add</button><button id = 'close' class = 'add_book_action'>Close</button>
+                <input accept="image/x-png,image/gif,image/jpeg" class = "add_book-menu__new-book-cover" type="file">
+                <div class="add_book-menu__incorrect-cover input-error hidden">No image</div><br>
+                <div class="add_book-menu__buttons">
+                    <button  id = 'add' class = 'add__book-menu__buttons__action add__book-menu__add-book'>Add</button><button id = 'close' class = 'add__book-menu__buttons__action'>Close</button>
                 </div>
             </div>
         </div>
-        <div class="bannerBookEditor">
-            <div class="bookEditor">
-                <span class = 'book_info_att' >Name:  </span>
-                <span class = 'book_info_att book_info_name'></span><br><br>
-                <span class = 'book_info_att' >Author:  </span>
-                <span class = 'book_info_att book_info_author'></span><br><br>
-                <span class = 'book_info_att'>Tag:</span>
-                <p><input class = 'book_info_att tag' maxlength = "25" size = "40" ></p>
-                <button class = 'book_info_att add_tag'>Add</button>
-                <span class = 'book_info_att tags'></span><br><br>
-                <span class = 'book_info_att'>Rating:</span><br>
-                <div class='book_info_att book_rating_stars'>
-                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                    <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
+        <div class="book-editor__banner">
+            <div class="book-editor">
+                <span class = 'book-editor__element' >Name:  </span>
+                <span class ="book-editor__element book-editor__name"></span><br><br>
+                <span class = 'book-editor__element' >Author:  </span>
+                <span class ="book-editor__element book-editor__author"></span><br><br>
+                <span class = 'book-editor__element'>Tag:</span>
+                <p>
+                    <input type="text" class = 'book-editor__element tag' maxlength = "25" size = "40" list="tag-template">
+                    <datalist id="tag-template">
+                        <option value="Must read titles">
+                        <option value="Best of list">
+                        <option value="Classic Novels">
+                        <option value="Non Flction">
+                    </datalist>
+                </p>
+                <button class ="book-editor__element book-editor__add-tag">Add</button>
+                <span class ="book-editor__element book-editor__tags"></span><br><br>
+                <span class = 'book-editor__element'>Rating:</span><br>
+                <div class='book-editor__element book-editor__rating-stars'>
+                    <span class='book-editor__rating-star book-editor__rating-star-inactive'>&#9733;</span>
+                    <span class='book-editor__rating-star book-editor__rating-star-inactive'>&#9733;</span>
+                    <span class='book-editor__rating-star book-editor__rating-star-inactive'>&#9733;</span>
+                    <span class='book-editor__rating-star book-editor__rating-star-inactive'>&#9733;</span>
+                    <span class='book-editor__rating-star book-editor__rating-star-inactive'>&#9733;</span>
                 </div>
-                <button class = 'book_info_att closeBookEditor'>Close</button>
+                <button class ="book-editor__element book-editor-close">Close</button>
             </div>
         </div>
-        <div class="book" style="display: none;">
-            <div class="book_img">
-                <img class="book_img_view">
+        <div class="book-template none">
+            <div class="book__img-panel">
+                <img class="book__img-view">
             </div>
-            <div class="book_name"></div>
-            <div class="book_author"></div>
-            <div class="book_rating"></div>
+            <div class="book__name"></div>
+            <div class="book-author"></div>
+            <div class="book-rating"></div>
         </div>
-        <div class = "warning addBookWarning" style="display: none;">
+        <div class ="warning-add-book-template none">
             <i class = "fas fa-history icon_warning"></i>
-            <div class = "warning_text">You added <a href="#"></a> by <a href="#"></a> to your must reload titles</div>
+            <div class = "warning__text">You added <a href="#"></a> by <a href="#"></a> to your must reload titles</div>
         </div>
-        <div class = "warning addStarsWarning" style="display: none;">
+        <div class ="warning-add-stars-template none">
             <i class = "fas fa-history icon_warning"></i>
-            <div class = "warning_text">Added <span></span> stars by <a href="#"></a></div>
+            <div class = "warning__text">Added <span></span> stars by <a href="#"></a></div>
         </div>
-        <div class = "event" style="display: none;"></div>
+        <div class ="warning-actions-template none">
+            <i class = "fas fa-history icon_warning"></i>
+            <div class = "warning__text"></div>
+        </div>
+        <div class = "event-template none" ></div>
         <div class = "panel">
-            <div class = "top_panel">
-                <div class = "top_panel_help">Help Center&emsp;&bull;</div>
-                <div class = "top_panel_support">&ensp;Our Supports</div>
-                <div class = "top_panel_user">
-                    <img src="http://dayfun.ru/wp-content/uploads/2012/02/как-нарисовать-лицо-человека-карандашом-7.jpg" alt="" class="user">
+            <div class = "top-panel">
+                <div class = "top-panel__help-center">Help Center&emsp;&bull;</div>
+                <div class = "top-panel__support">&ensp;Our Supports</div>
+                <div class = "top-panel__user">
+                    <img src="http://dayfun.ru/wp-content/uploads/2012/02/как-нарисовать-лицо-человека-карандашом-7.jpg" alt="" class="user-img">
                     Join Doe
                     <i class="fas fa-check-circle checked"></i>
                 </div>
             </div>
             <div class = "actions">
-                <div class = "add_book">
-                    <button class = "add_book_button">&plus;&emsp;ADD BOOK</button>
+                <div class = "actions__add-book">
+                    <button class = "action__add-book__button">&plus;&emsp;ADD BOOK</button>
                 </div>
-                <div class = "actions_line"></div>
-                <div class = "actions_settings">
-                    <div id = 'now_reading' class = "actions_settings_item">
+                <div class = "actions__line-splitter"></div>
+                <div class = "actions__settings">
+                    <div class = "actions__settings-item actions__now-reading">
                         <i class = "fa fa-book icons" aria-hidden="true"></i>
                         Now reading
                     </div>
-                    <div class = "actions_settings_item">
+                    <div class = "actions__settings-item">
                         <i class = "fas fa-globe-americas icons"></i>
                         Browse
                     </div>
-                    <div class = "actions_settings_item">
+                    <div class = "actions__settings-item">
                         <i class = "fas fa-shopping-cart icons"></i>
                         Buy Books
                     </div>
-                    <div id = "favourite_books" class = "actions_settings_item">
+                    <div class = "actions__settings-item actions__favourite-books">
                         <i class = "fas fa-star icons"></i>
                         Favourite Books
                     </div>
-                    <div class = "actions_settings_item">
+                    <div class = "actions__settings-item">
                         <i class = "fas fa-list icons"></i>
                         Washiest
                     </div>
-                    <div id = 'history' class = "actions_settings_item">
+                    <div class = "actions__settings-item history-events">
                         <i class = "fas fa-history icons"></i>
                         History
                     </div>
                 </div>
-                <div class = "actions_line"></div>
-                <div class = "actions_popularity">
-                    <div class = "actions_popularity_item">
+                <div class = "actions__line-splitter"></div>
+                <div class = "actions__tags">
+                    <div class = "actions__tags__item must-read-titles">
                         <i class = "fas fa-circle icon_popularity_1"></i>
                         Must read titles
                     </div>
-                    <div class = "actions_popularity_item">
+                    <div class = "actions__tags__item best-list">
                         <i class="fas fa-circle icon_popularity_2"></i>
                         Best of list
                     </div>
-                    <div class = "actions_popularity_item">
+                    <div class = "actions__tags__item classic-novels">
                         <i class = "fas fa-circle icon_popularity_3"></i>
                         Classic Novels
                     </div>
-                    <div class = "actions_popularity_item">
+                    <div class = "actions__tags__item non-flction">
                         <i class = "fas fa-circle icon_popularity_4"></i>
                         Non Flction
                     </div>
                 </div>
-                <div class = "actions_line"></div>
-                <div class = "actions_warnings">
-                    <!-- текст --
-                    <div class = "warning">
-                        <i class = "fas fa-history icon_warning"></i>
-                        <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
-                    </div>
-                    <div class = "warning">
-                        <i class="fas fa-history icon_warning"></i>
-                        <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
-                    </div>
-                    <div class = "warning">
-                        <i class="fas fa-history icon_warning"></i>
-                        <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
-                    </div>
-                    <div class = "warning">
-                        <i class="fas fa-history icon_warning"></i>
-                        <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
-                    </div>
-                    <div class = "warning">
-                        <i class="fas fa-history icon_warning"></i>
-                        <div class = "warning_text">You added <a href="#">Fight Club</a> by <a href="#">Chuck</a> to your must reload titles</div>24 minutes ago
-                    </div>
-                    -- текст -->
-                </div>
+                <div class = "actions__line-splitter"></div>
+                <div class = "actions__warnings"></div>
             </div>
             <div class = "books">
-                <div class = "books_name">Browse Available Books</div>
-                <div class = "books_line"></div>
-                <div class = "books_settings">
-                    <div class = "books_settings_item">All Books</div>
-                    <div class = "books_settings_item">Most Recent</div>
-                    <div class = "books_settings_item">Most Popular</div>
-                    <div class = "books_settings_item">Free Books</div>
-                    <div class = "search">
-                        <input class = "search_searcher" placeholder="Enter Keywords" type="search">
-                        <button class = "search_button"><i class="fas fa-search"></i></button>
+                <div class = "books__name">Browse Available Books</div>
+                <div class = "books__line-splitter"></div>
+                <div class = "books__settings">
+                    <div class = "books__settings__Item">All Books</div>
+                    <div class = "books__settings__Item">Most Recent</div>
+                    <div class = "books__settings__Item">Most Popular</div>
+                    <div class = "books__settings__Item">Free Books</div>
+                    <div class = "books__search-books">
+                        <input class = "books__search-books__search-Input" placeholder="Enter Keywords" type="search">
+                        <button class = "books__search-books__start-search-button"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="books_line"></div>
-                <div class = "books_view">
-                    <!-- текст --
-                    <div class="book">
-                        <div class="book_img">
-                            <img class="book_img_view" src="https://editus.ru/img/services/verstka/cover_1.jpg" alt="Письма мастера дзен">
-                        </div>
-                        <div class="book_name">
-                            Free Books
-                        </div>
-                        <div class="book_author">
-                            Free Books
-                        </div>
-                        <div class="book_rating">
-                            <div class="stars">
-                                <span class = 'star'>&#9734;</span>
-                                <span class = 'star'>&#9734;</span>
-                                <span class = 'star'>&#9734;</span>
-                                <span class = 'star'>&#9734;</span>
-                                <span class = 'star'>&#9734;</span>
-                            </div>
-                        </div>
-                    </div>
-                    -- текст -->
-                    <!-- текст --
-                    <div id = 'book_info' class = "book_info">
-                        <span class = 'book_info_att' >Name:  </span>
-                        <span class = 'book_info_att' id = 'book_info_name'></span><br><br>
-                        <span class = 'book_info_att' >Author:  </span>
-                        <span class = 'book_info_att' id = 'book_info_author'></span><br><br>
-                        <span class = 'book_info_att'>Tag:</span>
-                        <p><input class = 'book_info_att' id = "tag" maxlength = "25" size = "40" ></p>
-                        <button class = 'book_info_att' id = 'add_tag'>Add</button>
-                        <span class = 'book_info_att' id = "tags"></span><br><br>
-                        <span class = 'book_info_att'>Rating:</span><br>
-                        <div class='book_info_att book_rating_stars'>
-                            <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                            <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                            <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                            <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                            <span class='book_rating_star book_rating_star_inactive'>&#9733;</span>
-                        </div>
-                    </div>
-                    -- текст -->
-                </div>
+                <div class="books__line-splitter"></div>
+                <div class = "books-view all-books"></div>
             </div>
-            <div class = "low_panel">
-                <div class = "settings">
+            <div class = "low-panel">
+                <div class = "low-panel__settings">
                     <i class="fas fa-cog"></i>
                 </div>
-                <div class = "help">
+                <div class = "low-panel__reference">
                     <i class="fas fa-question-circle"></i>
                 </div>
             </div>
@@ -229,9 +175,5 @@
         <script src="js/Controller.js"></script>
         <script src="js/View.js"></script>
         <script src="js/core.js"></script>
-        <script src="js/actions/add_book.js"></script>
-        <script src="js/actions/warnings.js"></script>
-        <script src="js/actions/find_book.js"></script>
-        <script src="js/actions/rating.js"></script>
     </body>
 </html>

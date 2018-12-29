@@ -1,6 +1,6 @@
-.top_panel_help {
+.top-panel__help-center {
     width: 100px;
-
+    color: #86e6ff;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -14,15 +14,15 @@
     align-items: center;
 }
 
-.top_panel_support {
+.top-panel__support {
     width: 100px;
-
+    color: #86e6ff;
     display: flex;
     justify-content:center;
     align-items: center;
 }
 
-.top_panel_user {
+.top-panel__user {
     width: 150px;
     background-color: #16a4fa;
 
@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.user {
+.user-img {
     margin-left: 5px;
     margin-right: 5px;
 

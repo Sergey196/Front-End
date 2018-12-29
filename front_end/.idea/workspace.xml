@@ -4,36 +4,25 @@
     <list default="true" id="25ed9a44-5bd6-4124-bde0-fa88ec4e75fd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/css/BookEditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/BookEditor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/css/add_book_menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/add_book_menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/4/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/4/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/4/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/4/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/BookEditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/book-editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/actions.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/actions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/add_book_menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/add-book-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/book.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/books.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/books.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/low_panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/low-panel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/css/top_panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/css/top-panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/Controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/js/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/Model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/5/js/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/View.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/add_book.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/find_book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/rating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/5/js/actions/warnings.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test5/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test5/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test5/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/Controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/EventEmitter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/Model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/View.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test6/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test7/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,15 +38,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+            <state relative-caret-position="459">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -65,8 +55,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/Controller.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/JS/5/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/actions.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-641" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/add-book-menu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/book-editor.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/5/js/View.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="44" column="23" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/book.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="861">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -75,55 +112,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/EventEmitter.js">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/top-panel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/actions/warnings.js">
+        <entry file="file://$PROJECT_DIR$/JS/5/css/books.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-343">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/View.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/actions/rating.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/5/js/actions/find_book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="1224">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -143,36 +144,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>book_info_name</find>
-      <find>add_rafting</find>
-      <find>all_books()</find>
-      <find>al</find>
-      <find>4</find>
-      <find>ale</find>
-      <find>star</find>
-      <find>remove_last_event()</find>
-      <find>book_img</find>
-      <find>stars</find>
-      <find>event</find>
-      <find>book_info</find>
-      <find>remove_children</find>
-      <find>tags</find>
-      <find>add_tag</find>
-      <find>now_reading</find>
-      <find>closeBookEditor</find>
-      <find>book_rating_star</find>
       <find>book_rating_stars</find>
-      <find>add_rating</find>
-      <find>bookInfo</find>
-      <find>onBook</find>
+      <find>nactive</find>
+      <find>tag</find>
+      <find>tags</find>
+      <find>close</find>
+      <find>now_reading</find>
+      <find>now_readingactions__now-reading</find>
       <find>onAddRaiting</find>
-      <find>name</find>
-      <find>onAddBook</find>
-      <find>onAllBooks</find>
-      <find>search_searcher</find>
+      <find>this</find>
+      <find>books</find>
+      <find>history</find>
       <find>all_books</find>
+      <find>last_warnings</find>
+      <find>all_favourite_books</find>
+      <find>searcher</find>
+      <find>all_warnings</find>
+      <find>remove_children</find>
+      <find>rating_book</find>
+      <find>add_rating_book</find>
+      <find>add_rating</find>
+      <find>input-error</find>
+      <find>books-view</find>
+      <find>onBook</find>
+      <find>find_book</find>
+      <find>findLastWarnings</find>
+      <find>creatingViewBookRating</find>
+      <find>creatingViewRatingBookEditor</find>
+      <find>searchBooksByValue</find>
       <find>add_book</find>
-      <find>onHistory</find>
+      <find>add-book-menu</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Sergey_Utkin\WebstormProjects\front_end\JS\5</dir>
@@ -184,9 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JS/5/actions.css" />
-        <option value="$PROJECT_DIR$/JS/5/css/books.ts" />
-        <option value="$PROJECT_DIR$/test2/index.html" />
         <option value="$PROJECT_DIR$/test3/index.html" />
         <option value="$PROJECT_DIR$/test3/index.css" />
         <option value="$PROJECT_DIR$/test2/index.css" />
@@ -218,23 +216,26 @@
         <option value="$PROJECT_DIR$/test7/index.js" />
         <option value="$PROJECT_DIR$/JS/5/css/modal.ts" />
         <option value="$PROJECT_DIR$/JS/5/css/modal.css" />
-        <option value="$PROJECT_DIR$/JS/5/css/books.css" />
-        <option value="$PROJECT_DIR$/JS/5/js/Controller.js" />
         <option value="$PROJECT_DIR$/JS/5/js/EventEmitter.js" />
         <option value="$PROJECT_DIR$/JS/5/css/book.css" />
-        <option value="$PROJECT_DIR$/JS/5/css/BookEditor.css" />
-        <option value="$PROJECT_DIR$/JS/5/js/actions/rating.js" />
         <option value="$PROJECT_DIR$/test/index.js" />
         <option value="$PROJECT_DIR$/test/index.css" />
-        <option value="$PROJECT_DIR$/JS/5/css/add_book_menu.css" />
-        <option value="$PROJECT_DIR$/JS/5/css/index.css" />
-        <option value="$PROJECT_DIR$/test/index.html" />
         <option value="$PROJECT_DIR$/JS/5/js/actions/add_book.js" />
+        <option value="$PROJECT_DIR$/JS/5/css/BookEditor.css" />
+        <option value="$PROJECT_DIR$/JS/5/css/add_book_menu.css" />
+        <option value="$PROJECT_DIR$/JS/5/js/actions/rating.js" />
         <option value="$PROJECT_DIR$/JS/5/js/actions/find_book.js" />
         <option value="$PROJECT_DIR$/JS/5/js/actions/warnings.js" />
-        <option value="$PROJECT_DIR$/JS/5/js/Model.js" />
+        <option value="$PROJECT_DIR$/JS/5/css/top-panel.css" />
+        <option value="$PROJECT_DIR$/JS/5/css/low-panel.css" />
+        <option value="$PROJECT_DIR$/JS/5/css/index.css" />
+        <option value="$PROJECT_DIR$/JS/5/css/books.css" />
+        <option value="$PROJECT_DIR$/test/index.html" />
+        <option value="$PROJECT_DIR$/JS/5/js/Controller.js" />
         <option value="$PROJECT_DIR$/JS/5/js/View.js" />
+        <option value="$PROJECT_DIR$/JS/5/js/Model.js" />
         <option value="$PROJECT_DIR$/JS/5/index.html" />
+        <option value="$PROJECT_DIR$/JS/5/css/add-book-menu.css" />
       </list>
     </option>
   </component>
@@ -286,14 +287,6 @@
             <path>
               <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
               <item name="front_end" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -340,7 +333,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/front_end/JS/5/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="NodeJSConfigurationType" path-to-js-file="JS/3/calculator.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -356,6 +352,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -394,11 +395,14 @@
       <workItem from="1545375281027" duration="290000" />
       <workItem from="1545634091649" duration="12639000" />
       <workItem from="1545808387479" duration="20000000" />
+      <workItem from="1545898840221" duration="13650000" />
+      <workItem from="1545913424811" duration="696000" />
+      <workItem from="1545982357585" duration="21157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351239000" />
+    <option name="totallyTimeSpent" value="386742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -525,61 +529,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
-    <entry file="file://$PROJECT_DIR$/JS/5/css/actions.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/books.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/BookEditor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test7/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/low_panel.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/top_panel.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/book.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/css/add_book_menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test7/index.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery_3.0.0_jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -594,81 +544,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/add_book.js" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13972" column="4" selection-start-line="13972" selection-start-column="4" selection-end-line="13972" selection-end-column="4" />
+          <caret line="16334" column="13" selection-start-line="16334" selection-start-column="13" selection-end-line="16334" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/low-panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/find_book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/warnings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/EventEmitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/top-panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/book-editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/actions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-641" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/books.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/css/book.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/5/js/core.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/EventEmitter.js">
+    <entry file="file://$PROJECT_DIR$/JS/5/css/add-book-menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/add_book.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/find_book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/rating.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/actions/warnings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/Controller.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/5/js/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="299">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        <state relative-caret-position="459">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/5/js/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="23" />
         </state>
       </provider>
     </entry>

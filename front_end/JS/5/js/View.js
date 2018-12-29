@@ -19,160 +19,267 @@ View.prototype.init = function () {
     });
 
     this.model.onBook.subscribe(function (newCounterValue) {
-        that.bookInfo(newCounterValue);
+        that.getBookInfo(newCounterValue);
     });
 
     this.model.onAddRaiting.subscribe(function (newCounterValue) {
-        that.add_rating(newCounterValue);
+        that.addRating(newCounterValue);
     });
 
     this.model.onAddTag.subscribe(function (newCounterValue) {
         that.addTag(newCounterValue);
     });
 
-    $('.books_view').on('click','.book_img', function(){
-        that.ctrl.book_info($(this).parent().children('.book_name').text(), $(this).parent().children('.book_author').text());
+    $('.all-books').on('click','.book__img-panel', function(){
+        that.ctrl.getBookInfo($(this).parent().children('.book__name').text(), $(this).parent().children('.book-author').text());
     });
 
-    $(".add_book_button").click(function() {
-        $('.bannerAddBookMenu').show();
+    $(".action__add-book__button").click(function() {
+        $(".add_book-menu__incorrect-name").removeClass("visible").addClass('hidden');
+        $(".add_book-menu__incorrect-author").removeClass("visible").addClass('hidden');
+        $(".add_book-menu__incorrect-cover").removeClass("visible").addClass('hidden');
+        $('.add_book-menu__banner').show();
     });
 
-    $("#add").click(function() {
-        $(".name").removeClass("visible").addClass('hidden');
-        $(".author").removeClass("visible").addClass('hidden');
-        $(".cover").removeClass("visible").addClass('hidden');
-        if($('#name').val().length == 0) {
-            $(".name").removeClass("hidden").addClass('visible');
-        } else if($('#author').val().length == 0) {
-            $(".author").removeClass("hidden").addClass('visible');
-        } else if($('#cover').val().length == 0) {
-            $(".cover").removeClass("hidden").addClass('visible');
+    $(".add__book-menu__add-book").click(function() {
+        if($('.add_book-menu__new-book-name').val().length === 0) {
+            $(".add_book-menu__incorrect-name").removeClass("hidden").addClass('visible');
+        } else if($(".add_book-menu__new-book-author").val().length === 0) {
+            $(".add_book-menu__incorrect-author").removeClass("hidden").addClass('visible');
+        } else if($(".add_book-menu__new-book-cover").val().length === 0) {
+            $(".add_book-menu__incorrect-cover").removeClass("hidden").addClass('visible');
         } else {
-            that.ctrl.add_book($('#name').val(), $('#author').val(), $('#cover'));
+            that.ctrl.addBook($('.add_book-menu__new-book-name').val(), $('.add_book-menu__new-book-author').val(), $('.add_book-menu__new-book-cover'));
         }
     });
 
     $("#close").click(function() {
-        $('.bannerAddBookMenu').hide();
+        $('.add_book-menu__banner').hide();
     });
 
-    $('.bookEditor').on('click','.book_rating_star', function() {
+    $('.book-editor').on('click','.book-editor__rating-star', function() {
         let count = $(this).nextAll().length + 1;
-        that.ctrl.add_rating(count);
+        that.ctrl.addRating(count);
     });
 
 
-    $(".add_tag").click(function() {
-        that.ctrl.add_tag($('.tag').val());
+    $(".book-editor__add-tag").click(function() {
+        if($('.tag').val().length != 0) {
+            that.ctrl.addTag($('.tag').val());
+            $(".tag").val('');
+        }
     });
 
-    $("#history").click(function() {
-        that.ctrl.history();
+    $(".history-events").click(function() {
+        that.ctrl.getHistoryEvents();
     });
 
-    $("#now_reading").click(function() {
-        that.ctrl.all_reading();
+    $(".actions__now-reading").click(function() {
+        that.ctrl.getAllBooks();
     });
 
-    $("#favourite_books").click(function() {
-        that.ctrl.favourite_books();
+    $(".actions__favourite-books").click(function() {
+        that.ctrl.getFavouriteBooks();
     });
 
-    $(".search_searcher").on('input', function() {
-        that.ctrl.search($(".search_searcher").val());
+    $(".books__search-books__search-Input").on('input', function() {
+        that.ctrl.search($(".books__search-books__search-Input").val());
     });
 
-    $(".closeBookEditor").click(function() {
-        that.ctrl.all_reading();
+    $(".book-editor-close").click(function() {
+        that.ctrl.getAllBooks();
     });
+
+
+    $(".must-read-titles").click(function() {
+        that.ctrl.filterByTags('Must read titles');
+    });
+
+    $(".best-list").click(function() {
+        that.ctrl.filterByTags('Best of list');
+    });
+
+    $(".classic-novels").click(function() {
+        that.ctrl.filterByTags('Classic Novels');
+    });
+
+    $(".non-flction").click(function() {
+        that.ctrl.filterByTags('Non Flction');
+    });
+
+    this.resetPage = function() {
+        $('.all-books').addClass('books-view');
+        $('.all-books').children('.book').remove();
+        $('.all-books').children('.event').remove();
+        $('.add_book-menu__banner').hide();
+        $('.book-editor__banner').hide();
+    };
 };
 
 View.prototype.addBook = function (data) {
-    $('.bannerAddBookMenu').hide();
-    remove_children();
 
-    data.forEach(function(element) {
-        let book = $('body').children('.book').clone();
-        book.removeAttr('style');
-        book.find('.book_img_view').attr("src", element.img_url);
-        book.find('.book_name').append(element.name);
-        book.find('.book_author').append(element.author);
-        book.find('.book_rating').append(rating_book(element.rating));
-        $('.books_view').append(book);
-    });
+    if(data != undefined) {
+        this.resetPage();
+
+        let creatingViewBookRating = function(rating) {
+
+            let stars = $('<div>', {
+                class: 'stars'
+            });
+
+            for (let i = 0; i < 5; i++) {
+                if(rating == null || rating === 0) {
+                    stars.append($('<span>',{ "class": "star"}).append('&#9734;'));
+
+                } else if(rating !== 0) {
+                    rating--;
+                    stars.append($('<span>',{ "class": "star"}).append('&#9733;'));
+                }
+            }
+            return stars;
+        };
+
+        data.forEach(function(element) {
+            let book = $('body').children('.book-template').clone();
+            book.removeClass('book-template');
+            book.removeClass('none');
+            book.addClass('book');
+            book.find('.book__img-view').attr("src", element.img_url);
+            book.find('.book__name').append(element.name);
+            book.find('.book-author').append(element.author);
+            book.find('.book-rating').append(creatingViewBookRating(element.rating));
+            $('.all-books').append(book);
+        });
+    } else {
+        $(".add_book-menu__incorrect-name").removeClass("hidden").addClass('visible');
+    }
 };
 
 View.prototype.addEvent = function (data) {
-    $('.actions_warnings').empty();
+    $('.actions__warnings').empty();
     //$('.actions_warnings').append(data);
     data.forEach(function(element) {
         if(element.type === 'add_book') {
-            let event = $('body').children('.addBookWarning').clone();
-            event.removeAttr('style');
-            event.find('.warning_text a').first().append(element.name);
-            event.find('.warning_text a').last().append(element.author);
-            $('.actions_warnings').append(event);
-        } else {
-            let event = $('body').children('.addStarsWarning').clone();
-            event.removeAttr('style');
+            let event = $('body').children('.warning-add-book-template').clone();
+            event.removeClass('warning-add-book-template');
+            event.removeClass('none');
+            event.addClass('actions__warnings__warning');
+            event.find('.warning__text a').first().append(element.name);
+            event.find('.warning__text a').last().append(element.author);
+            $('.actions__warnings').append(event);
+        } else if(element.type === 'add_rating') {
+            let event = $('body').children('.warning-add-stars-template').clone();
+            event.removeClass('warning-add-stars-template');
+            event.removeClass('none');
+            event.addClass('actions__warnings__warning');
             event.find('span').append(element.count);
             event.find('a').append(element.name);
-            $('.actions_warnings').append(event);
+            $('.actions__warnings').append(event);
+        } else if(element.type === 'tags_found') {
+            let event = $('body').children('.warning-actions-template').clone();
+            event.removeClass('warning-actions-template');
+            event.removeClass('none');
+            event.addClass('actions__warnings__warning');
+            event.find('.warning__text').append(element.text);
+            $('.actions__warnings').append(event);
+        } else if(element.type === 'search') {
+            let event = $('body').children('.warning-actions-template').clone();
+            event.removeClass('warning-actions-template');
+            event.removeClass('none');
+            event.addClass('actions__warnings__warning');
+            event.find('.warning__text').append(element.text);
+            $('.actions__warnings').append(event);
         }
     });
 };
 
 View.prototype.allHistory = function (data) {
-    remove_children();
+    this.resetPage();
+    $('.all-books').removeClass('books-view')
 
     data.forEach((val, key, arr) => {
         if(val.type === 'add_book') {
-            let history = $('body').children('.event').clone();
-            history.removeAttr('style');
+            let history = $('body').children('.event-template').clone();
+            history.removeClass('event-template');
+            history.removeClass('none');
+            history.addClass('event');
             history.append('Add book: ');
             history.append(val.name);
             history.append(' author: ');
             history.append(val.author);
             history.append('  ');
             history.append(val.data);
-            $('.books_view').append(history);
-        } else {
-            let history = $('body').children('.event').clone();
-            history.removeAttr('style');
+            $('.all-books').append(history);
+        } else if(val.type === 'add_rating') {
+            let history = $('body').children('.event-template').clone();
+            history.removeClass('event-template');
+            history.removeClass('none');
+            history.addClass('event');
             history.append('Add rating by: ');
             history.append(val.name);
             history.append(' rating: ');
             history.append(val.count);
             history.append('  ');
             history.append(val.data);
-            $('.books_view').append(history);
+            $('.all-books').append(history);
+        } else if(val.type === 'tags_found') {
+            let history = $('body').children('.event-template').clone();
+            history.removeClass('event-template');
+            history.removeClass('none');
+            history.addClass('event');
+            history.append(val.text);
+            history.append('  ');
+            history.append(val.data);
+            $('.all-books').append(history);
+        } else if(val.type === 'search') {
+            let history = $('body').children('.event-template').clone();
+            history.removeClass('event-template');
+            history.removeClass('none');
+            history.addClass('event');
+            history.append(val.text);
+            history.append('  ');
+            history.append(val.data);
+            $('.all-books').append(history);
         }
     });
 };
 
-View.prototype.bookInfo = function (data) {
-    //remove_children();
-
-    $(".bannerBookEditor").show();
-    $('.book_info_name').text(data.name);
-    $('.book_info_author').text(data.author);
+View.prototype.getBookInfo = function (data) {
+    $(".book-editor__banner").show();
+    $(".tag").val('');
+    $(".book-editor__tags").empty();
+    $('.book-editor__name').text(data.name);
+    $('.book-editor__author').text(data.author);
     data.tags.forEach(function(element) {
-        $('.tags').append(element + ' ');
+        $('.book-editor__tags').append(element + ' ');
     });
 };
 
 View.prototype.addTag = function(tag) {
-    $('.tags').append(tag + ' ');
+    $('.book-editor__tags').append(tag + ' ');
 };
 
-View.prototype.add_rating = function(stars) {
-    $('.book_rating_stars').remove();
-    $(stars).insertBefore('.closeBookEditor');
+View.prototype.addRating = function(stars) {
+    $('.book-editor__rating-stars').remove();
+
+    let creatingViewRatingBookEditor = function(rating) {
+
+        let stars = $('<div>', {
+            class: 'book-editor__element book-editor__rating-stars'
+        });
+
+        for (let i = 0; i < 5; i++) {
+            if(rating == null || rating === 0) {
+                stars.prepend($('<span>',{ "class": "book-editor__rating-star book-editor__rating-star-inactive"}).append('&#9733;'));
+            } else if(rating !== 0) {
+                rating--;
+                stars.prepend($('<span>',{ "class": "book-editor__rating-star book-editor__rating-star-active"}).append('&#9733;'));
+            }
+        }
+        return stars;
+    }
+
+    $(creatingViewRatingBookEditor(stars)).insertBefore('.book-editor-close');
 };
 
-function remove_children() {
-    $('.books_view').children('.book').remove();
-    $('.books_view').children('.event').remove();
-    $('.bannerBookEditor').hide();
-};
+
